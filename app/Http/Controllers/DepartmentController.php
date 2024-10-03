@@ -2,11 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Deartment;
-use App\Http\Requests\StoreDeartmentRequest;
-use App\Http\Requests\UpdateDeartmentRequest;
+use App\Models\Department;
+use App\Http\Requests\StoreDepartmentRequest;
+use App\Http\Requests\UpdateDepartmentRequest;
+use App\Http\Resources\DepartmentResource;
 
-class DeartmentController extends Controller
+class DepartmentController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -27,7 +28,7 @@ class DeartmentController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreDeartmentRequest $request)
+    public function store(StoreDepartmentRequest $request)
     {
         //
     }
@@ -35,7 +36,7 @@ class DeartmentController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Deartment $deartment)
+    public function show(Department $department)
     {
         //
     }
@@ -43,7 +44,7 @@ class DeartmentController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Deartment $deartment)
+    public function edit(Department $department)
     {
         //
     }
@@ -51,7 +52,7 @@ class DeartmentController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateDeartmentRequest $request, Deartment $deartment)
+    public function update(UpdateDepartmentRequest $request, Department $department)
     {
         //
     }
@@ -59,7 +60,7 @@ class DeartmentController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Deartment $deartment)
+    public function destroy(Department $department)
     {
         //
     }
