@@ -9,12 +9,12 @@ class Department extends Model
 {
     use HasFactory;
 
-    public function Users(){
-        return $this->hasMany(User::class);
+    public function user() {
+        return $this->hasMany(user::class);
     }
 
-    public function Project(){
+    public function project() {
         return $this->hasMany(Project::class);
 }
 
-}
+};
